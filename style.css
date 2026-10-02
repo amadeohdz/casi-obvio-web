@@ -1,0 +1,81 @@
+/* Tokens: docs/BRAND_TOKENS.md. Sin fuentes externas: el sitio no hace peticiones a terceros. */
+:root {
+  --carbon: #0A0A0A;
+  --yellow: #DDFF00;
+  --cream: #FAF7ED;
+  --dark-gray: #3A3A3A;
+  --light-gray: #D9D9D9;
+  --white: #FFFFFF;
+  --display: "Sora", "Inter", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --body: "Inter", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--carbon);
+  font: 17px/1.6 var(--body);
+}
+
+main, header, footer { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+header { padding-top: 28px; padding-bottom: 8px; }
+header img { width: 240px; max-width: 70%; height: auto; display: block; }
+
+nav { margin-top: 12px; font-size: 15px; }
+nav a { margin-right: 18px; }
+
+h1, h2, h3 { font-family: var(--display); line-height: 1.2; }
+h1 { font-size: 34px; margin: 32px 0 8px; }
+h2 { font-size: 23px; margin: 40px 0 8px; }
+h3 { font-size: 18px; margin: 24px 0 4px; }
+
+a { color: var(--carbon); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+a:hover { background: var(--yellow); }
+
+.promise {
+  font-family: var(--display);
+  font-size: 22px;
+  border-left: 6px solid var(--yellow);
+  padding-left: 14px;
+  margin: 24px 0;
+}
+
+.muted { color: var(--dark-gray); font-size: 15px; }
+
+.flow {
+  background: var(--carbon);
+  color: var(--cream);
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+.flow strong { color: var(--yellow); }
+
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--light-gray); }
+th { font-family: var(--display); }
+
+.lang { margin-top: 56px; padding-top: 8px; border-top: 4px solid var(--carbon); }
+
+footer {
+  margin-top: 64px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-top: 1px solid var(--light-gray);
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+footer a { margin-right: 14px; }
+
+@media (max-width: 520px) {
+  body { font-size: 16px; }
+  h1 { font-size: 28px; }
+  table, thead, tbody, tr, th, td { display: block; }
+  thead { display: none; }
+  td { border: 0; padding: 2px 0; }
+  tr { border-bottom: 1px solid var(--light-gray); padding: 8px 0; }
+}
